@@ -5,6 +5,7 @@ const defaultUserName = "[الاسم]";
 const urlParams = new URLSearchParams(window.location.search);
 const userName = (urlParams.get("name") || defaultUserName).trim() || defaultUserName;
 const chessboardNames = ["ابو ماسه", "ابو سديل", "أبو ناصر", "أبو محمود"];
+const ngcNames = ["أبو سجاد", "أبو فراس", "أبو رواف", "أبو منصور", "أبو حمزة", "وائل ثابت"];
 
 const finalMessageTemplate =
   "كل عام وانت بخير يا [الاسم] .. ليك عيدية خاصة عشاء لفردين .. للحصول على العيدية برجاء تخفيض التارجت ٢٠٪؜";
@@ -17,6 +18,7 @@ const homeGreeting = document.getElementById("homeGreeting");
 const finalMessage = document.getElementById("finalMessage");
 const confettiLayer = document.getElementById("confettiLayer");
 const companyLogoPanel = document.getElementById("companyLogoPanel");
+const ngcLogoPanel = document.getElementById("ngcLogoPanel");
 const badgeRow = document.getElementById("badgeRow");
 
 function fillName(text) {
@@ -60,9 +62,11 @@ function updateCopy() {
 
 function updateCompanyLogo() {
   const showChessboardLogo = chessboardNames.includes(userName);
+  const showNgcLogo = ngcNames.includes(userName);
 
   companyLogoPanel.hidden = !showChessboardLogo;
-  badgeRow.hidden = showChessboardLogo;
+  ngcLogoPanel.hidden = !showNgcLogo;
+  badgeRow.hidden = showChessboardLogo || showNgcLogo;
 }
 
 claimBtn.addEventListener("click", () => {

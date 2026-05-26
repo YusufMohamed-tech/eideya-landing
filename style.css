@@ -732,11 +732,13 @@ h2 {
 }
 
 .badge-row[hidden],
-.company-logo-panel[hidden] {
+.company-logo-panel[hidden],
+.ngc-logo-panel[hidden] {
   display: none;
 }
 
-.company-logo-panel {
+.company-logo-panel,
+.ngc-logo-panel {
   position: relative;
   z-index: 6;
   margin-top: -2px;
@@ -745,6 +747,19 @@ h2 {
   border-radius: 26px;
   background: #030303;
   box-shadow: var(--shadow-gold), inset 0 0 0 2px rgba(255, 235, 156, 0.22);
+}
+
+.ngc-logo-panel {
+  padding: 8px;
+  background: #151515;
+}
+
+.ngc-logo-panel img {
+  display: block;
+  width: 100%;
+  min-height: 118px;
+  object-fit: cover;
+  border-radius: 18px;
 }
 
 .chessboard-logo {
