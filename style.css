@@ -978,7 +978,7 @@ h2 {
 .result-card {
   position: relative;
   margin-top: 16px;
-  padding: 62px 18px 24px;
+  padding: 58px 16px 18px;
   border: 4px solid var(--gold);
   border-radius: 30px;
   background: linear-gradient(180deg, rgba(255, 249, 233, 0.92), rgba(255, 237, 196, 0.9));
@@ -1012,13 +1012,27 @@ h2 {
 
 .result-card p {
   color: var(--brown);
-  font-size: clamp(1.45rem, 6.9vw, 2rem);
-  line-height: 1.55;
+  font-size: clamp(1.22rem, 5.7vw, 1.72rem);
+  line-height: 1.5;
   font-weight: 900;
 }
 
 .result-card p::first-line {
   color: var(--green);
+}
+
+.funny-sticker {
+  width: min(100%, 295px);
+  margin: 14px auto 0;
+  overflow: hidden;
+  border: 3px solid rgba(217, 161, 40, 0.75);
+  border-radius: 18px;
+  background: rgba(255, 249, 233, 0.74);
+  box-shadow: 0 12px 24px rgba(95, 55, 11, 0.16);
+}
+
+.funny-sticker .tenor-gif-embed {
+  display: block;
 }
 
 .result-scene {
@@ -1235,7 +1249,12 @@ h2 {
   }
 
   .result-card p {
-    font-size: clamp(1.2rem, 6vw, 1.55rem);
+    font-size: clamp(1.05rem, 5.2vw, 1.38rem);
+  }
+
+  .funny-sticker {
+    width: min(100%, 260px);
+    margin-top: 10px;
   }
 
   .result-scene {
