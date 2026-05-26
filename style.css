@@ -751,7 +751,7 @@ h2 {
 
 .ngc-logo-panel {
   padding: 8px;
-  background: #151515;
+  background: #0e0e0e;
   height: 154px;
   overflow: hidden;
 }
@@ -763,6 +763,7 @@ h2 {
   max-width: 100%;
   object-fit: contain;
   border-radius: 18px;
+  background: #111;
 }
 
 .chessboard-logo {
