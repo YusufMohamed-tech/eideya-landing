@@ -4,6 +4,7 @@ const defaultUserName = "[الاسم]";
 // Example: index.html?name=أبو%20ماسه
 const urlParams = new URLSearchParams(window.location.search);
 const userName = (urlParams.get("name") || defaultUserName).trim() || defaultUserName;
+const chessboardNames = ["ابو ماسه", "ابو سديل", "أبو ناصر", "أبو محمود"];
 
 const finalMessageTemplate =
   "كل عام وانت بخير يا [الاسم] .. ليك عيدية خاصة عشاء لفردين .. للحصول على العيدية برجاء تخفيض التارجت ٢٠٪؜";
@@ -15,6 +16,8 @@ const backBtn = document.getElementById("backBtn");
 const homeGreeting = document.getElementById("homeGreeting");
 const finalMessage = document.getElementById("finalMessage");
 const confettiLayer = document.getElementById("confettiLayer");
+const companyLogoPanel = document.getElementById("companyLogoPanel");
+const badgeRow = document.getElementById("badgeRow");
 
 function fillName(text) {
   return text.replaceAll("[الاسم]", userName);
@@ -55,6 +58,13 @@ function updateCopy() {
   finalMessage.textContent = fillName(finalMessageTemplate);
 }
 
+function updateCompanyLogo() {
+  const showChessboardLogo = chessboardNames.includes(userName);
+
+  companyLogoPanel.hidden = !showChessboardLogo;
+  badgeRow.hidden = showChessboardLogo;
+}
+
 claimBtn.addEventListener("click", () => {
   updateCopy();
   launchConfetti();
@@ -66,3 +76,4 @@ backBtn.addEventListener("click", () => {
 });
 
 updateCopy();
+updateCompanyLogo();
