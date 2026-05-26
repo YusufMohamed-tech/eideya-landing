@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عيديتك وصلت</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell" aria-live="polite">
+    <!-- Decorative background layers -->
+    <div class="pattern-layer"></div>
+    <div class="golden-glow" aria-hidden="true"></div>
+    <div class="sparkle-field" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="confetti-static" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- First promo screen -->
+    <section class="screen screen-home is-active" id="homeScreen">
+      <button class="menu-btn" type="button" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="top-decor" aria-hidden="true">
+        <div class="lantern lantern-one"><span></span></div>
+        <div class="lantern lantern-two"><span></span></div>
+        <div class="lantern lantern-three"><span></span></div>
+      </div>
+
+      <div class="arch-panel">
+        <div class="moon-star" aria-hidden="true">
+          <div class="moon"></div>
+          <div class="star-medal"></div>
+        </div>
+        <div class="hero-copy">
+          <h1>عيديتك<br>وصلت</h1>
+          <div class="ornament-line" aria-hidden="true"></div>
+          <p class="subheadline" id="homeGreeting">كل عام وأنت بخير يا [الاسم]</p>
+          <p class="intro-text">مفاجأة خاصة بمناسبة عيد الأضحى المبارك</p>
+        </div>
+      </div>
+
+      <div class="scene-sticker" aria-label="خروف عيد لطيف ماسك ظرف وهدية">
+        <div class="plant plant-right"></div>
+        <div class="plant plant-left"></div>
+        <div class="gold-dome dome-right"></div>
+        <div class="gold-dome dome-left"></div>
+        <div class="sheep">
+          <span class="ear ear-right"></span>
+          <span class="ear ear-left"></span>
+          <span class="face"><i></i><b></b></span>
+          <span class="wool wool-one"></span>
+          <span class="wool wool-two"></span>
+          <span class="wool wool-three"></span>
+          <span class="wool wool-four"></span>
+          <span class="hand hand-right"></span>
+          <span class="hand hand-left"></span>
+          <span class="envelope"><em></em></span>
+        </div>
+        <div class="gift-box"><span></span></div>
+      </div>
+
+      <div class="badge-row" aria-label="تفاصيل العيدية">
+        <div class="mini-card dinner-card">
+          <span class="mini-icon dish-icon"></span>
+          <strong>عشاء لفردين</strong>
+          <small>تجربة مميزة بانتظارك</small>
+        </div>
+        <div class="mini-card gift-card">
+          <span class="mini-icon present-icon"></span>
+          <strong>هدية خاصة</strong>
+          <small>اخترناها لك بكل حب</small>
+        </div>
+      </div>
+
+      <div class="bottom-actions">
+        <button class="primary-btn" id="claimBtn" type="button">
+          <span class="btn-icon gift-line"></span>
+          استلم عيديتك
+        </button>
+        <p class="trust-text"><span></span> آمن وسهل <i></i> لا مشاركة مطلوبة</p>
+      </div>
+    </section>
+
+    <!-- Final reward screen -->
+    <section class="screen screen-result" id="resultScreen">
+      <button class="menu-btn" type="button" aria-label="القائمة">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="top-decor result-top" aria-hidden="true">
+        <div class="lantern lantern-one"><span></span></div>
+        <div class="lantern lantern-two"><span></span></div>
+        <div class="lantern lantern-three"><span></span></div>
+      </div>
+
+      <div class="arch-panel result-arch">
+        <div class="moon-star" aria-hidden="true">
+          <div class="moon"></div>
+          <div class="star-medal"></div>
+        </div>
+        <div class="result-header">
+          <h2>تم استلام<br>عيديتك</h2>
+          <div class="laurel" aria-hidden="true"></div>
+        </div>
+
+        <div class="result-card">
+          <div class="seal-check" aria-hidden="true"></div>
+          <p id="finalMessage">
+            كل عام وانت بخير يا [الاسم] .. ليك عيدية خاصة عشاء لفردين .. للحصول على العيدية برجاء تخفيض التارجت ٢٠٪؜
+          </p>
+        </div>
+      </div>
+
+      <div class="result-scene" aria-hidden="true">
+        <div class="plant plant-right"></div>
+        <div class="plant plant-left"></div>
+        <div class="sheep result-sheep">
+          <span class="ear ear-right"></span>
+          <span class="ear ear-left"></span>
+          <span class="face"><i></i><b></b></span>
+          <span class="wool wool-one"></span>
+          <span class="wool wool-two"></span>
+          <span class="wool wool-three"></span>
+          <span class="wool wool-four"></span>
+          <span class="hand hand-right"></span>
+          <span class="hand hand-left"></span>
+          <span class="envelope"><em></em></span>
+        </div>
+        <div class="gift-box result-gift"><span></span></div>
+      </div>
+
+      <div class="result-badge"><span class="dish-icon"></span> عشاء لفردين</div>
+      <p class="wish-text">تتمنى لك عيد أضحى مبارك وسعيد</p>
+      <button class="secondary-btn" id="backBtn" type="button">
+        <span class="btn-icon home-line"></span>
+        العودة للرئيسية
+      </button>
+    </section>
+
+    <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
