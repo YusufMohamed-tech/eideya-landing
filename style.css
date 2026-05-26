@@ -752,13 +752,16 @@ h2 {
 .ngc-logo-panel {
   padding: 8px;
   background: #151515;
+  height: 154px;
+  overflow: hidden;
 }
 
 .ngc-logo-panel img {
   display: block;
   width: 100%;
-  min-height: 118px;
-  object-fit: cover;
+  height: 130px;
+  max-width: 100%;
+  object-fit: contain;
   border-radius: 18px;
 }
 
